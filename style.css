@@ -1,0 +1,107 @@
+
+	
+	/* wildcard styling */
+	* { 
+		box-sizing: border-box; 
+	} 
+	
+	/* padding for whole body */
+	body { 
+		padding: 15px; 
+	} 
+	
+	/* styling body */
+	.container { 
+		max-width: 1200px; 
+		margin: auto; 
+	} 
+	
+	h1 { 
+		color: green; 
+	} 
+	
+	/* anchor tag decoration */
+	a { 
+		text-decoration: none; 
+		color: #5673C8; 
+	} 
+	
+	a:hover { 
+		color: lightblue; 
+	} 
+	
+	/* paragraph tga decoration */
+	p { 
+		display: -webkit-box; 
+		-webkit-box-orient: vertical; 
+		-webkit-line-clamp: 4; 
+		overflow: hidden; 
+
+	} 
+	
+	/* row and column decoration */
+	.row { 
+		margin: 0px -18px; 
+		padding: 8px; 
+	} 
+	
+	.row > .column { 
+		padding: 6px; 
+	} 
+	
+	.column { 
+		float: left; 
+		width: 25%; 
+	} 
+	
+	.row:after { 
+		content: ""; 
+		display: table; 
+		clear: both; 
+	} 
+	
+	/* content decoration */
+	.content { 
+		background-color: white; 
+		padding: 10px; 
+		border: 1px solid gray; 
+	} 
+	
+	/* window size 850 width set */
+	@media screen and (max-width: 850px) { 
+		.column { 
+			width: 50%; 
+		} 
+	} 
+
+	/* window size 400 width set */
+	@media screen and (max-width: 400px) { 
+		.column { 
+			width: 100%; 
+		} 
+	} 
+
+    .header{
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .topnav{
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .topnav a{
+        float: left;
+        display: block;
+        color:#f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; 
+    }
+
+    .topnav a:hover{
+        background-color: #ddd;
+        color: black;
+    }
